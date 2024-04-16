@@ -1,0 +1,318 @@
+{
+    "Title": "The House",
+    "Credits": "Created by Michelle Tan (mtan46@ucsc.edu).",
+    "InitialLocation": "Outside",
+    "Locations": {
+        "Outside": {
+            "Body": "You're standing in front of the entrance to an old, empty house that you recently moved into.",
+            "Choices": [
+                {
+                    "Text": "Enter the house.",
+                    "Target": "House Entrance"
+                }
+            ]
+        },
+        "Exit": {
+            "Body": "You follow the cat, thinking it will lead you somewhere. It goes outside."
+        },
+        "House Entrance": {
+            "Body": "You enter the house and find yourself standing in an empty living room.",
+            "Choices": [
+                {
+                    "Text": "Go to the kitchen.",
+                    "Target": "Kitchen"
+                },
+                {
+                    "Text": "Go to the bathroom.",
+                    "Target": "Bathroom"
+                },
+                {
+                    "Text": "Look around the living room.",
+                    "Target": "Living Room"
+                }
+            ]
+        },
+        "Bathroom": {
+            "Body": "You peek into the bathroom. It's very dusty and there are cobwebs everywhere. Otherwise, it seems relatively clean.",
+            "Choices": [
+                {
+                    "Text": "Return to the living room.",
+                    "Target": "House Entrance"
+                }
+            ]
+        },
+        "Living Room": {
+            "Body": "You look around the living room. It's connected to the kitchen and there's a wooden staircase in the corner.",
+            "Choices": [
+                {
+                    "Text": "Examine the bookshelves.",
+                    "Target": "Bookshelves"
+                },
+                {
+                    "Text": "Go upstairs.",
+                    "Target": "Upstairs"
+                },
+                {
+                    "Text": "Go to the kitchen.",
+                    "Target": "Kitchen"
+                },
+                {
+                    "Text": "Go to the bathroom.",
+                    "Target": "Bathroom"
+                },
+                {
+                    "Text": "The cat reappears. See what it wants.",
+                    "Target": "Exit"
+                }
+            ]
+        },
+        "Bookshelves": {
+            "Body": "Even though the rest of the house was empty, the bookshelves weren't. They were filled with all sorts of books, mostly on the subjects of human behavior and technology.",
+            "Choices": [
+                {
+                    "Text": "Explore the rest of the living room.",
+                    "Target": "Living Room"
+                }
+            ]
+        },
+        "Kitchen": {
+            "Body": "You look around the kitchen. It's well-lit by the sunlight streaming in and there's a slight breeze coming in from a crack in the window.",
+            "Choices": [
+                {
+                    "Text": "Examine the countertop.",
+                    "Target": "Kitchen Counter"
+                },
+                {
+                    "Text": "A cat appears behind you. Pet the cat.",
+                    "Target": "Cat"
+                },
+                {
+                    "Text": "You see a door you hadn't noticed earlier. You bend down to examine it.",
+                    "Target": "Unopened Sealed Door"
+                },
+                {
+                    "Text": "Go back to the living room.",
+                    "Target": "Living Room"
+                }
+            ]
+        },
+        "Kitchen Counter": {
+            "Body": "The countertops are wooden and well maintained. You spot an interesting pocket knife. Neatly tucked into a corner is a few books about cooking foragable goods.",
+            "Choices": [
+                {
+                    "Text": "Pocket the knife and explore the rest of the kitchen.",
+                    "Target": "Kitchen"
+                }
+            ]
+        },
+        "Cat": {
+            "Body": "You reach down to pet the cat. It rubs against your hand and walks away.",
+            "Choices": [
+                {
+                    "Text": "Follow the cat.",
+                    "Target": "Kitchen Counter"
+                }
+            ]
+        },
+        "Unopened Sealed Door": {
+            "Body": "It's been sealed over by paint. Using the knife you just found, you cut around the paint.",
+            "Choices": [
+                {
+                    "Text": "Open the unsealed door.",
+                    "Target": "Downstairs Passageway"
+                }
+            ]
+        },
+        "Opened Sealed Door": {
+            "Body": "The paint previously sealing this door has already been cut around.",
+            "Choices": [
+                {
+                    "Text": "Open the unsealed door.",
+                    "Target": "Downstairs Passageway"
+                }
+            ]
+        },
+        "Downstairs Passageway": {
+            "Body": "The door leads to a narrow passageway. You could have sworn that this door hadn't been here earlier. You decide to keep walking and see where it leads.",
+            "Choices": [
+                {
+                    "Text": "Turn left.",
+                    "Target": "Left1"
+                }
+            ]
+        },
+        "Left1": {
+            "Body": "The passageway is dark. You bump into a wall. Feeling around, it seems that the passageway turns left.",
+            "Choices": [
+                {
+                    "Text": "Turn left.",
+                    "Target": "Left2"
+                }
+            ]
+        },
+        "Left2": {
+            "Body": "You turn left and continue walking. You hit another wall.",
+            "Choices": [
+                {
+                    "Text": "Turn left.",
+                    "Target": "Left3"
+                }
+            ]
+        },
+        "Left3": {
+            "Body": "You're met with another wall but this time you don't bump into it. A crack of light is coming from the crack of a door on the left wall, giving you just enough light to see.",
+            "Choices": [
+                {
+                    "Text": "Push the door open.",
+                    "Target": "Closet Door Outside"
+                }
+            ]
+        },
+        "Closet Door Outside": {
+            "Body": "Upon opening the door, you see a large bedroom. You had come in through the bedroom's right closet door.",
+            "Choices": [
+                {
+                    "Text": "Look around the bedroom.",
+                    "Target": "Large Bedroom"
+                }
+            ]
+        },
+        "Large Bedroom": {
+            "Body": "You enter the bedroom and find that it is empty, aside from an old wooden bed frame that had been left there. There are two small closet doors on opposing sides of the room.",
+            "Choices": [
+                {
+                    "Text": "Examine the rusty bed frame.",
+                    "Target": "Bed Frame"
+                },
+                {
+                    "Text": "Open the left closet door.",
+                    "Target": "Upstairs Passageway"
+                },
+                {
+                    "Text": "Open the right closet door.",
+                    "Target": "Right Closet Door"
+                },
+                {
+                    "Text": "Leave the bedroom.",
+                    "Target": "Upstairs"
+                }
+            ]
+        },
+        "Right Closet Door": {
+            "Body": "You try opening the door but it doesn't budge. There's no keyhole and it doesn't seem to be sealed by any paint. Maybe it can only be opened from the other side.",
+            "Choices": [
+                {
+                    "Text": "Go back.",
+                    "Target": "Large Bedroom"
+                }
+            ]
+        },
+        "Bed Frame": {
+            "Body": "You discover strange scratch marks on the legs of the bed frame. From the cat, perhaps.",
+            "Choices": [
+                {
+                    "Text": "Go back.",
+                    "Target": "Large Bedroom"
+                }
+            ]
+        },
+        "Upstairs Passageway": {
+            "Body": "It's a very narrow closet. It extends far to the right. Seeing as how there's a similar closet door across, maybe it wraps around the room?",
+            "Choices": [
+                {
+                    "Text": "Turn right.",
+                    "Target": "Right1"
+                }
+            ]
+        },
+        "Right1": {
+            "Body": "It's very dark inside the closet. You hit a wall and see that you can only turn right.",
+            "Choices": [
+                {
+                    "Text": "Turn right.",
+                    "Target": "Right2"
+                }
+            ]
+        },
+        "Right2": {
+            "Body": "You hit another wall.",
+            "Choices": [
+                {
+                    "Text": "Turn right.",
+                    "Target": "Right3"
+                }
+            ]
+        },
+        "Right3": {
+            "Body": "You reach the end of the passageway. The other closet door should be to your right.",
+            "Choices": [
+                {
+                    "Text": "Open the door.",
+                    "Target": "Sealed Door Outside"
+                }
+            ]
+        },
+        "Sealed Door Outside": {
+            "Body": "You open the door, expecting to find yourself on the other side of the bedroom. Instead, you find yourself in the kitchen, having stepped out the door that you had previously unsealed. Hadn't the kitchen been downstairs?",
+            "Choices": [
+                {
+                    "Text": "Look around you.",
+                    "Target": "Kitchen"
+                }
+            ]
+        },
+        "Sealed Door No Knife": {
+            "Body": "You push on the door but it seems locked. You feel around for a keyhole but find nothing. It seems to have been sealed shut by paint.",
+            "Choices": [
+                {
+                    "Text": "Go back outside.",
+                    "Target": "Large Bedroom"
+                }
+            ]
+        },
+        "Sealed Door Yes Knife": {
+            "Body": "You push on the door but it seems locked. You feel around for a keyhole but find nothing. It seems to have been sealed shut by paint.",
+            "Choices": [
+                {
+                    "Text": "Cut around the door with the knife you found in the kitchen.",
+                    "Target": "Sealed Door Outside"
+                }
+            ]
+        },
+        "Upstairs": {
+            "Body": "The stairs lead to a small open area upstairs. There are two doors in front of you.",
+            "Choices": [
+                {
+                    "Text": "Look inside the storage closet.",
+                    "Target": "Storage Closet"
+                },
+                {
+                    "Text": "Go inside the bedroom.",
+                    "Target": "Large Bedroom"
+                },
+                {
+                    "Text": "Go back downstairs.",
+                    "Target": "Living Room"
+                }
+            ]
+        },
+        "Storage Closet": {
+            "Body": "You push the door and it opens with a loud creak. The inside is musty and filled with stacks upon stacks of cardboard boxes. This must've been the previous tenant's.",
+            "Choices": [
+                {
+                    "Text": "Look inside the boxes.",
+                    "Target": "Boxes"
+                }
+            ]
+        },
+        "Boxes": {
+            "Body": "You open a few of the boxes on the top of the stacks. Nothing too interesting, mostly old clothes and random gadgets. You find a jar filled with some sort of metallic dust, glittering as if there were light emitting from within the jar. You're intrigued but you return it to the box, thinking it was just another one of the gadgets you had seen earlier.",
+            "Choices": [
+                {
+                    "Text": "Go back outside.",
+                    "Target": "Upstairs"
+                }
+            ]
+        }
+    }
+}

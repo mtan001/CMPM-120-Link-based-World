@@ -69,7 +69,7 @@ class Location extends Scene {
                 // TODO: add a useful second argument to addChoice so that the current code of handleChoice below works
             }
         } else {
-            this.engine.addChoice("The end.")
+            this.engine.addChoice("Follow the cat.")
         }
     }
 

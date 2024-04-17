@@ -1,5 +1,5 @@
 {
-    "Title": "The House",
+    "Title": "The House with a Cat",
     "Credits": "Created by Michelle Tan (mtan46@ucsc.edu).",
     "InitialLocation": "Outside",
     "Locations": {
@@ -13,7 +13,7 @@
             ]
         },
         "Exit": {
-            "Body": "You follow the cat, thinking it will lead you somewhere. It goes outside."
+            "Body": "The cat jumps off the shelf and starts walking towards the door. You follow the cat again, thinking it will lead you somewhere. It goes outside and disappears into the woods bordering the house."
         },
         "House Entrance": {
             "Body": "You enter the house and find yourself standing in an empty living room.",
@@ -62,6 +62,24 @@
                 },
                 {
                     "Text": "The cat reappears. See what it wants.",
+                    "Target": "Cat on Shelf"
+                }
+            ]
+        },
+        "Cat on Shelf": {
+            "Body": "You follow the cat to the bookshelves. It jumps up onto a shelf. You notice a small book that had been hidden behind the bigger books.",
+            "Choices": [
+                {
+                    "Text": "Pick up the book and read it.",
+                    "Target": "Diary"
+                }
+            ]
+        },
+        "Diary": {
+            "Body": "You open the book and realize that you had picked up a diary. Had the cat wanted you to find this? Skimming through it, you learn that its writer had been dreadfully homesick. They wrote pages and pages describing every detail of the faerie world, the one they had been banished from for desiring to take part in the human world and for wanting to become human so badly. 'Faerie world?' You want to believe that this was just a work of fiction but the oddities in this house begin to make more and more sense as you read. The cat, who sometimes seemingly disappears into thin air. The strange bottle of glowing dust in the storage closet upstairs. Pixie dust? And finally, the strangest thing about the house. The wormhole that somehow connects the kitchen and upstairs bedroom. Could this have been the work of faerie magic? Or were your eyes just playing tricks on you?.. As you stood there, becoming increasingly lost in the many thoughts flooding your head, the cat lets out a loud meow. You look at it, wondering what it wants.",
+            "Choices": [
+                {
+                    "Text": "Pet the cat.",
                     "Target": "Exit"
                 }
             ]
@@ -151,7 +169,7 @@
             ]
         },
         "Left2": {
-            "Body": "You turn left and continue walking. You hit another wall.",
+            "Body": "You smell the faint scent of grass and feel a slight breeze, as if you were in a forest. You turn left and continue walking. You hit another wall.",
             "Choices": [
                 {
                     "Text": "Turn left.",
@@ -235,7 +253,7 @@
             ]
         },
         "Right2": {
-            "Body": "You hit another wall.",
+            "Body": "You smell the faint scent of grass and feel a slight breeze, as if you were in a forest. You hit another wall.",
             "Choices": [
                 {
                     "Text": "Turn right.",
@@ -280,7 +298,7 @@
             ]
         },
         "Upstairs": {
-            "Body": "The stairs lead to a small open area upstairs. There are two doors in front of you.",
+            "Body": "The stairs lead to a small open area upstairs.",
             "Choices": [
                 {
                     "Text": "Look inside the storage closet.",
